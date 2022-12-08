@@ -8,7 +8,7 @@ class MailService {
       secure: false,
       auth: {
         user: process.env.SMTP_USER,
-        pass: 'hkooswcbhytkmtrw'
+        pass: process.env.SMTP_PASS
       }
     });
   }
