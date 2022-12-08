@@ -15,7 +15,7 @@ class MailService {
 
   async sendChangePasswordMail(to, id) {
     await this.trnasporter.sendMail({
-      from: process.env.SMTP_HOST,
+      from: process.env.SMTP_USER,
       to,
       subject: 'Password recovery.',
       text: 'Click link to recover password.',
